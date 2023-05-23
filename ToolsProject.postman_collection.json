@@ -1,0 +1,276 @@
+{
+	"info": {
+		"_postman_id": "6479ccc6-884d-46b6-8fda-0bc34e7d8731",
+		"name": "ToolsProject",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25097901",
+		"_collection_link": "https://red-space-592714.postman.co/workspace/Team-Workspace~ed1907d8-0c3c-4b32-8db8-33feddd067c9/collection/25097901-6479ccc6-884d-46b6-8fda-0bc34e7d8731?action=share&creator=25097901&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Sign Up",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"hamdy\",\n  \"password\": \"1111\",\n  \"role\": \"Runner\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/toolsProject/api/User/signUp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"toolsProject",
+						"api",
+						"User",
+						"signUp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sign In",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/toolsProject/api/User/signIn/koko/1111/Customer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"toolsProject",
+						"api",
+						"User",
+						"signIn",
+						"koko",
+						"1111",
+						"Customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add meal",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/toolsProject/api/restaurants/addMeal/1/menu/bigmac/100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"toolsProject",
+						"api",
+						"restaurants",
+						"addMeal",
+						"1",
+						"menu",
+						"bigmac",
+						"100"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/toolsProject/api/Customer/createOrder/1/bigmac",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"toolsProject",
+						"api",
+						"Customer",
+						"createOrder",
+						"1",
+						"bigmac"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create restrauant",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/toolsProject/api/restaurants/createRes/hardees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"toolsProject",
+						"api",
+						"restaurants",
+						"createRes",
+						"hardees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list Res",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/toolsProject/api/Customer/listRes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"toolsProject",
+						"api",
+						"Customer",
+						"listRes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update order",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/toolsProject/api/Customer/updateOrder/1/Update/salad",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"toolsProject",
+						"api",
+						"Customer",
+						"updateOrder",
+						"1",
+						"Update",
+						"salad"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit menue",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/toolsProject/api/restaurants/1/editMenu/{restaurantId}/menu/{mealId}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"toolsProject",
+						"api",
+						"restaurants",
+						"1",
+						"editMenu",
+						"{restaurantId}",
+						"menu",
+						"{mealId}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "trip count for runner",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "mark order as complete",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/toolsProject/api/Runner/tripCount/completeOrder/{OrderID}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"toolsProject",
+						"api",
+						"Runner",
+						"tripCount",
+						"completeOrder",
+						"{OrderID}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "receive Order",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/toolsProject/api/Runner/receiveOrder/{runnerID}/{deliveryFees}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"toolsProject",
+						"api",
+						"Runner",
+						"receiveOrder",
+						"{runnerID}",
+						"{deliveryFees}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
